@@ -123,6 +123,7 @@ function copiarTexto(){
 
     // funcion hace uso  de excommand para copiar texto 
  let  textocopiado= document.getElementById("resultado");
+ document.getElementById("resultado").value="";
 navigator.clipboard.writeText(textocopiado.value);
 
 }
