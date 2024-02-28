@@ -121,11 +121,11 @@ document.getElementById('resultado').value=cadena
 //funcion para el copiado del texto
 function copiarTexto(){
 alert(null,"copiar texto");
-    // funcion hace uso  de excommand para copiar texto 
+    // Copiado del texto 
  let  textocopiado= document.getElementById('resultado');
  
  document.getElementById("resultado").value="";
- 
+ //uso del portapapeles del navegador
 navigator.clipboard.writeText(textocopiado.value);
 
 }
