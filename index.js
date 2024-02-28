@@ -117,11 +117,16 @@ document.getElementById('resultado').value=cadena
 
 //funcion para el copiado del texto
 function copiarTexto(){
-console.log("copiar texto");
+alert("funcion copiar texto",null);
     // Copiado del texto 
  let  textocopiado= document.getElementById('resultado');
- 
- document.getElementById('resultado').value='';
+ //__________________________________________
+ //clean input  resultado
+ //___________________________________________
+
+ document.getElementById("resultado").value='';
+
+
  //uso del portapapeles del navegador
 navigator.clipboard.writeText(textocopiado.value);
 
