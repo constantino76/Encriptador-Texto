@@ -4,7 +4,7 @@ document.getElementById('texto').value="";
 var textoencriptado="";
 var etiqueta= document.getElementById('lb-mensaje');
 ocultarElementos()
-console.log(texto)
+Alert(texto)
 var caracter=""
 for(var cont =0;cont<texto.length;cont++){
 
@@ -61,6 +61,7 @@ desemcriptar(textoencriptado)
 }
 //gaitober
 function desemcriptar(cadena){
+    document.getElementById('resultado').value='';
     document.getElementById('texto').value
 //var palabradesincriptada="";
 //creamos un array con los codigos para recorrer y comparar
@@ -109,10 +110,6 @@ if(elemento=='ufat'){
 });
 
 
-
-
-
-
 // simplemente agregamos a nuestro input el texto desencriptado
 document.getElementById('resultado').value=cadena
 
@@ -120,11 +117,11 @@ document.getElementById('resultado').value=cadena
 
 //funcion para el copiado del texto
 function copiarTexto(){
-alert(null,"copiar texto");
+console.log("copiar texto");
     // Copiado del texto 
  let  textocopiado= document.getElementById('resultado');
  
- document.getElementById("resultado").value="";
+ document.getElementById('resultado').value='';
  //uso del portapapeles del navegador
 navigator.clipboard.writeText(textocopiado.value);
 
