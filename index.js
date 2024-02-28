@@ -120,7 +120,7 @@ document.getElementById('resultado').value=cadena
 
 //funcion para el copiado del texto
 function copiarTexto(){
-
+alert('copiar texto');
     // funcion hace uso  de excommand para copiar texto 
  let  textocopiado= document.getElementById('resultado');
  
